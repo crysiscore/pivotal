@@ -674,7 +674,9 @@
 }
 
 .min-vh-75 {
-    min-height: 60vh;
+    min-height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .pivotal-hero {
@@ -686,7 +688,14 @@
         url("../img/background.jpg") center center / cover no-repeat;
 }
 
-.pivotal-hero h1,
+.pivotal-hero h1 {
+    max-width: 860px;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.08;
+    letter-spacing: 0;
+}
+
 .service-hero h1 {
     max-width: 860px;
     margin: 0;
@@ -701,31 +710,14 @@
     color: #ffffff;
 }
 
-.hero-kicker {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    color: var(--bs-secondary);
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 .hero-lead {
-    max-width: 760px;
-    margin-top: 1.5rem;
+    max-width: 720px;
+    margin-top: 1.25rem;
     color: rgba(255, 255, 255, .88);
-    font-size: 1.2rem;
-    line-height: 1.75;
+    font-size: 1.1rem;
+    line-height: 1.65;
 }
 
-.hero-proof {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .75rem;
-    margin-top: 2rem !important;
-}
-
-.hero-proof span,
 .capability-list span {
     display: inline-flex;
     align-items: center;
@@ -733,12 +725,6 @@
     padding: .65rem 1rem;
     border-radius: 6px;
     font-weight: 600;
-}
-
-.hero-proof span {
-    border: 1px solid rgba(255, 255, 255, .24);
-    color: rgba(255, 255, 255, .92);
-    background: rgba(255, 255, 255, .08);
 }
 
 .section-heading {
@@ -918,15 +904,17 @@
 }
 
 @media (max-width: 991.98px) {
-    .pivotal-hero h1,
+    .pivotal-hero h1 {
+        font-size: 2.4rem;
+    }
+
     .service-hero h1 {
         font-size: 2.6rem;
     }
 
     .min-vh-75 {
-        min-height: auto;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 3.25rem;
+        padding-bottom: 3.25rem;
     }
 
     .cta-panel {
@@ -952,12 +940,8 @@
     }
 
     .min-vh-75 {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    .hero-proof {
-        display: none;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
     }
 
     .credibility-panel,
