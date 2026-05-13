@@ -1,480 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Pivotal - IT Solutions Website</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Consultoria em ciência de dados, Computação em nuvem, Inovação tecnológica, Soluções digitais corporativas, 
-        Transformação digital, Serviços de TI em Moçambique, Tecnologia de informação para empresas, Gestão de dados empresariais,
-         Automação de processos corporativos, Integração de sistemas, Business Intelligence, Power BI, R, Data Science,
-         DHIS,DHIS Tracker , OpenMRS , RedCap , OpenLMS, Maputo, Moz, Digital Health , e-Health" name="keywords">
-        <meta content="A Pivotal é uma empresa de consultoria especializada em ciência de dados e computação em nuvem." name="description">
-        <link rel="icon" href="img/logo-Photoroom.png" type="image/x-icon"> <!-- Ajuste o caminho e o tipo conforme necessário -->
+<head>
+    <meta charset="utf-8">
+    <title>Serviços | Pivotal Consultoria TIC, IA e Software</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="serviços TIC, ciência de dados, inteligência artificial, adoção de IA, desenvolvimento de software, business intelligence, cloud, AWS, Azure, infraestrutura de TI, hardware, redes, servidores, saúde digital, DHIS2, OpenMRS, REDCap, ODK, formação em tecnologia" name="keywords">
+    <meta content="Conheça os serviços da Pivotal em dados e BI, adoção de IA, desenvolvimento de software, cloud, infraestrutura de TI, saúde digital e formação técnica." name="description">
+    <link rel="icon" href="img/logo-Photoroom.png" type="image/png">
 
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-84S9RRLBRZ"></script>
-          <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-  
-          gtag('config', 'G-84S9RRLBRZ');
-          </script>
-          
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84S9RRLBRZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-84S9RRLBRZ');
+    </script>
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<body>
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
-        </div>
-        <!-- Spinner End -->
-
-        <!-- Topbar Start -->
-       <!--  <div class="container-fluid bg-dark py-2 d-none d-md-flex">
-            <div class="container">
-                <div class="d-flex justify-content-between topbar">
-                    <div class="top-info">
-                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>23 Ranking Street, New York</small>
-                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>Email@Example.com</small>
-                    </div>
-                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
-                    <div class="top-link">
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Topbar End -->
-
-        <!-- Navbar Start -->
-        <div class="container-fluid bg-primary">
-            <div class="container">
-                <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="text-white fw-bold d-block"><img src="img/logo-Photoroom.png" alt="Pivotal Logo" class="me-2" style="width: 65px; height:65ssspx;">Piv<span class="text-secondary">otal</span> </h1>
-                    </a>
-                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto p-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">Sobre</a>
-                            <a href="service.html" class="nav-item nav-link active">Serviços</a>
-                           <!--  <a href="project.html" class="nav-item nav-link">Projects</a>-->
-                            <div class="nav-item dropdown">
-                               <!--  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->
-                                <div class="dropdown-menu rounded">
-                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <a href="team.html" class="dropdown-item">Our Team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                        </div>
-                    </div>
-                   <!--  <div class="d-none d-xl-flex flex-shirink-0">
-                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                            <a href="tel:+258849004524" class="position-relative animated tada infinite">
-                                <i class="fa fa-phone-alt text-white fa-2x"></i>
-                                <div class="position-absolute" style="top: -7px; left: 20px;">
-                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="d-flex flex-column pe-4 ">
-                            <span class="text-white-50">Tem alguma dúvida?</span>
-                            <span class="text-secondary">Contacte-nos: + 258 84900 45 24</span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center ms-4 ">-->
-                           <!--  <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>-->
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar End -->
-
-        
-        <!-- Page Header Start -->
-        <div class="container-fluid page-header py-5">
-            <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown"></h1>
-                <!-- <h1 class="display-2 text-white mb-4 animated slideInDown">Serviços</h1> -->
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb justify-content-center mb-0">
-                    <!--  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Services</li>-->
-                    </ol>
-                </nav>
-            </div>
-        </div>
-        <!-- Page Header End -->
-
-
-        <!-- Fact Start -->
-      <!--   <div class="container-fluid bg-secondary py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">99</h1>
-                            <h5 class="text-white mt-1">Success in getting happy customer</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">25</h1>
-                            <h5 class="text-white mt-1">Thousands of successful business</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">120</h1>
-                            <h5 class="text-white mt-1">Total clients who love HighTech</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">5</h1>
-                            <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Fact End -->
-
-
-        <!-- Services Start -->
-
-        <div class="container-fluid services py-5 mb-5">
-            <div class="container">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Nossos Serviços</h5>
-                <h1>Soluções sob medida para atender às necessidades exclusivas do seu negócio.</h1>
-                </div>
-                <div class="row g-5 services-inner">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-chart-bar fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Desenvolvimento de soluções completas de BI &amp; visualização de dados</h4>
-                                    
-                                   
-                                    <!-- <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leia mais</a>-->
-                                
-                            </div>
-                            <div style="text-align: left; text-indent: 0.0cm;  font-size: 14px; font-weight: 300;">
-                                <p>● Análise de requisitos de negócios;</p>
-                                <p>● Desenho de solução de Business Intelligence (BI);</p>
-                                <p>● Desenvolvimento de relatórios, dashboards e aplicativos;</p>
-                                <p>● Garantia de qualidade de dados;</p>
-                                <p>● Modelagem de dados para bom desempenho analítico;</p>
-                                <p>● Projeto e implementação de processos ETL;</p>
-                                <p>● Projeto de visualização de dados.</p>
-                               
-                            </div>
-                        </div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="128" height="128" fill="currentColor" class="bi bi-bar-chart-line-fill text-primary">
-                                        <path d="M5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4zm8 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-9zm-4 3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-6z"/>
-                                      </svg>
-                                      
-                                    <h4 class="mb-3" style="margin-top: 8px;">Serviços do Business Intelligence</h4>
-                                    <div style="text-align: left; margin-top: 8px; text-indent: 0.0cm;  font-size: 14px; font-weight: 300;">
-                                      
-                                           
-                                        <p style="margin-top: 44px;">● Automação de relatórios;</p>
-                                        <p>● Análise e otimização de desempenho;</p>
-                                        <p>● Automação de processos com Power Automate;</p>
-                                        <p>● Desenvolvimento de aplicativos na Plataforma Microsoft PowerApps;</p>
-                                        <p>● Treinamento e consultoria em Power BI;</p>
-                                        <p>● Treinamento e consultoria em R, Python, e Tableau;</p>
-                                        <p>● Visualização de dados e reformulação do design UX.</p>
-                                 
-                                       
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-cloud fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Serviços de Computação em nuvem (Cloud Computing)</h4>
-
-                                    <div style="text-align: left; text-indent: 0.0cm;  font-size: 14px; font-weight: 300;">
-                                      
-
-                                        <p style="margin-top: 44px;">● Consultoria de engenharia de design em melhorias e automação</p>
-                                        <p>● Implementação da automação na infraestrutura existente</p>
-                                        <p>● Implementando soluções serverless ( Infraestrutura de rede e Servidores baseados na nuvem)</p>
-                                        <p>● Extração , transformação, e integração de dados de diferentes fontes;</p>
-                                        <p>● Implementação de processos ETL na nuvem.</p>
-                                       
-                                       
-                                    </div>
-                                  <!--   <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-heart fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Serviços de Saúde Digital (Digital Health / e-Health)</h4>
-                                    <div style="text-align: left; text-indent: 0.0cm;  font-size: 14px; font-weight: 300;">
-
-    
-                                        <p>● Desenho e implementação de sistemas de registo médico customizável;</p>
-                                        <p>● Desenvolvimento de sistemas de informação de base focado nas necessidades do cliente.</p>
-                                        <p>● Implementacao de solucoes moveis para recolha de dados (ODK, DHIS2 Tracker);</p>
-                                        <p>● Implementacao de sistemas eletrônicos para ensaios clínicos ( OpenClinica , REDCap);</p>
-                                        <p>● Sistemas para agregação, visualização e gestão de dados baseados em DHIS2 entre outras;</p>
-
-                                    </div>
-                                    <!--  <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>-->
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-user fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Treinamento Personalizado</h4>
-                                    <div style="text-align: left; text-indent: 0.0cm;  font-size: 14px; font-weight: 300;">
-
-                                        <p>● Avaliação dos requisitos de treinamento de uma empresa;</p>
-                                        <p>● Avaliar os resultados do programa de treinamento e fazer melhorias;</p>
-                                        <p>● Planejamento, desenvolvimento e entrega de programas de treinamento, plataformas e recursos;</p>
-                                        <p>● Programa de treinamentos para:</p>
-                                        <p style="text-align: left; text-indent: 0.2cm;">DHIS2 & Tracker | OpenMRS | RedCap | OpenLMS</p>
-
-                                        <p style="text-align: left; text-indent: 0.2cm;">Microsoft Excel | Microsoft Power BI & Tableu  </p>
-                                        <p style="text-align: left; text-indent: 0.2cm;">R | Open Data Kit (ODK) </p>
-
-                                    </div>
-                                    <!-- <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-lightbulb fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Consultoria em Transformação Digital</h4>
-                                    <div style="text-align: left; text-indent: 0.0cm;  font-size: 14px; font-weight: 300;">
-
-                                        <p>● Avaliação e Diagnóstico;</p>
-                                        <p>● Planejamento Estratégico;</p>
-                                        <p>●Seleção e Implementação de Tecnologias;</p>
-                                        <p>●Gestão de Mudanças;</p>
-                                     
-
-                                    </div>
-                                   <!-- <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       <!-- <div class="container-fluid services py-5 my-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Services</h5>
-                    <h1>Services Built Specifically For Your Business</h1>
-                </div>
-                <div class="row g-5 services-inner">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Development</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">UI/UX Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Cecurity</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Digital Marketing</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Programming</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Services End -->
-
-
-        <!-- Footer Start -->
-<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
-    <div class="container pt-5 pb-4">
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <a href="index.html">
-                    <h1 class="h2 text-white fw-bold d-block">Piv<span class="text-secondary">otal</span></h1>
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white fw-bold d-flex align-items-center mb-0">
+                        <img src="img/logo-Photoroom.png" alt="Pivotal Logo" class="me-2 site-logo">Piv<span class="text-secondary">otal</span>
+                    </h1>
                 </a>
-                <p class="mt-4 text-light">Capacitando Crescimento Através da Inovação.</p>
-                <div class="d-flex hightech-link">
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Abrir navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto p-0">
+                        <a href="index.html" class="nav-item nav-link">Início</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre</a>
+                        <a href="service.html" class="nav-item nav-link active text-secondary">Serviços</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
                 </div>
+            </nav>
+        </div>
+    </div>
+
+    <header class="service-hero">
+        <div class="container text-center">
+            <h1>Serviços TIC para dados, IA, software e infraestrutura</h1>
+            <p>Apoiamos organizações na análise de dados, adoção de inteligência artificial, desenvolvimento de software, modernização cloud, infraestrutura de TI, saúde digital e formação técnica.</p>
+        </div>
+    </header>
+
+    <section class="container-fluid py-5">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5 section-heading">
+                <h5 class="text-primary">Nossos Serviços</h5>
+                <h2>Capacidades técnicas organizadas por necessidade operacional</h2>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <a href="#" class="h3 text-secondary">Link Abreviado</a>
-                <div class="mt-4 d-flex flex-column short-link">
-                    <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Sobre Nós</a>
-                    <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contacte-nos</a>
-                    <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nossos Serviços</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nossos Projectos</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Política de Privacidade</a>
+            <div class="row g-4 service-grid">
+                <div class="col-lg-6">
+                    <article class="service-detail-card">
+                        <div class="service-card-head">
+                            <i class="fa fa-chart-bar"></i>
+                            <div>
+                                <h3>Dados, BI e Visualização</h3>
+                                <p>Transformação de dados em relatórios, dashboards e informação acionável para gestão.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Análise de requisitos de negócio e indicadores-chave.</li>
+                            <li>Desenho de soluções de Business Intelligence.</li>
+                            <li>Desenvolvimento de dashboards, relatórios e aplicações analíticas.</li>
+                            <li>Modelação de dados para desempenho analítico.</li>
+                            <li>Processos ETL, integração de fontes e garantia de qualidade de dados.</li>
+                            <li>Visualização de dados e melhoria da experiência de consulta.</li>
+                        </ul>
+                    </article>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <a href="#" class="h3 text-secondary">Contacte-nos</a>
-                <div class="text-white mt-4 d-flex flex-column contact-link">
-                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Maputo, Moçambique</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +258 84 412 9138</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> contact@pivotal.co.mz</a>
+                <div class="col-lg-6">
+                    <article class="service-detail-card">
+                        <div class="service-card-head">
+                            <i class="fa fa-chart-pie"></i>
+                            <div>
+                                <h3>Business Intelligence e Automação</h3>
+                                <p>Implementação e otimização de plataformas analíticas e fluxos de trabalho digitais.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Automação de relatórios e processos recorrentes.</li>
+                            <li>Análise e otimização de desempenho de relatórios.</li>
+                            <li>Automação com Power Automate.</li>
+                            <li>Aplicações internas na plataforma Microsoft PowerApps.</li>
+                            <li>Consultoria e formação em Power BI, R, Python e Tableau.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="service-detail-card">
+                        <div class="service-card-head">
+                            <i class="fa fa-robot"></i>
+                            <div>
+                                <h3>Adoção de Inteligência Artificial</h3>
+                                <p>Introdução de IA em processos reais, com foco em utilidade, dados preparados e controlo operacional.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Identificação e priorização de casos de uso de IA para a organização.</li>
+                            <li>Avaliação da qualidade, disponibilidade e sensibilidade dos dados necessários.</li>
+                            <li>Automação assistida de tarefas administrativas, analíticas e operacionais.</li>
+                            <li>Integração de funcionalidades de IA em aplicações, relatórios e fluxos existentes.</li>
+                            <li>Orientação sobre uso responsável, revisão humana e limites práticos das soluções.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="service-detail-card">
+                        <div class="service-card-head">
+                            <i class="fa fa-code"></i>
+                            <div>
+                                <h3>Desenvolvimento de Software</h3>
+                                <p>Construção de aplicações e integrações ajustadas aos processos, dados e equipas do cliente.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Desenvolvimento de aplicações web e sistemas internos.</li>
+                            <li>Criação de APIs, integrações entre sistemas e automatização de fluxos de dados.</li>
+                            <li>Modernização de aplicações existentes e melhoria de usabilidade.</li>
+                            <li>Desenho de bases de dados e componentes de backend para suporte operacional.</li>
+                            <li>Documentação, testes funcionais e transferência de conhecimento para equipas técnicas.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="service-detail-card">
+                        <div class="service-card-head">
+                            <i class="fa fa-cloud"></i>
+                            <div>
+                                <h3>Computação em Nuvem</h3>
+                                <p>Planeamento, implementação e automação de ambientes em cloud alinhados ao negócio.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Desenho de arquitetura em AWS e Azure.</li>
+                            <li>Automação de infraestrutura e processos operacionais.</li>
+                            <li>Implementação de soluções serverless e serviços geridos.</li>
+                            <li>Integração, transformação e tratamento de dados em cloud.</li>
+                            <li>Implementação de pipelines ETL em ambientes cloud.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="service-detail-card">
+                        <div class="service-card-head">
+                            <i class="fa fa-server"></i>
+                            <div>
+                                <h3>Infraestrutura de TI e Hardware</h3>
+                                <p>Suporte à base tecnológica que mantém sistemas, utilizadores e operações em funcionamento.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Avaliação de infraestrutura tecnológica existente.</li>
+                            <li>Planeamento e suporte de servidores, redes e equipamentos.</li>
+                            <li>Especificação e apoio à aquisição de hardware corporativo.</li>
+                            <li>Configuração, manutenção e documentação de ambientes de TI.</li>
+                            <li>Recomendações para continuidade operacional, desempenho e segurança básica.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="service-detail-card">
+                        <div class="service-card-head">
+                            <i class="fa fa-heartbeat"></i>
+                            <div>
+                                <h3>Saúde Digital</h3>
+                                <p>Soluções para recolha, gestão, integração e análise de dados em programas de saúde.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Desenho e implementação de sistemas de registo médico configuráveis.</li>
+                            <li>Sistemas de informação alinhados às necessidades do cliente.</li>
+                            <li>Soluções móveis para recolha de dados com ODK e DHIS2 Tracker.</li>
+                            <li>Implementação de sistemas eletrónicos para ensaios clínicos, incluindo OpenClinica e REDCap.</li>
+                            <li>Sistemas de agregação, visualização e gestão de dados com DHIS2.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="service-detail-card">
+                        <div class="service-card-head">
+                            <i class="fa fa-user-graduate"></i>
+                            <div>
+                                <h3>Formação e Transferência de Conhecimento</h3>
+                                <p>Capacitação técnica para equipas que precisam operar e evoluir as soluções implementadas.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Avaliação de necessidades de formação.</li>
+                            <li>Planeamento, desenvolvimento e entrega de programas de capacitação.</li>
+                            <li>Formação em DHIS2, DHIS2 Tracker, OpenMRS, REDCap e OpenLMS.</li>
+                            <li>Formação em Microsoft Excel, Power BI, Tableau, R e ODK.</li>
+                            <li>Avaliação de resultados e recomendações de melhoria.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-12">
+                    <article class="service-detail-card service-detail-card-wide">
+                        <div class="service-card-head">
+                            <i class="fa fa-lightbulb"></i>
+                            <div>
+                                <h3>Consultoria em Transformação Digital</h3>
+                                <p>Apoio estratégico e técnico para modernizar processos, sistemas e formas de trabalho.</p>
+                            </div>
+                        </div>
+                        <ul class="two-column-list">
+                            <li>Avaliação e diagnóstico de maturidade digital.</li>
+                            <li>Planeamento estratégico de iniciativas digitais.</li>
+                            <li>Seleção e implementação de tecnologias adequadas ao contexto.</li>
+                            <li>Gestão da mudança e apoio à adoção pelas equipas.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </div>
-        <hr class="text-light mt-5 mb-4">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start">
-                <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Pivotal</a>, Todos os direitos reservados.</span>
+    </section>
+
+    <section class="container-fluid capability-section py-5">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <h5 class="text-primary">Abordagem</h5>
+                    <h2>Serviços desenhados para implementação prática</h2>
+                    <p class="mb-0">A Pivotal combina análise, arquitetura, implementação e capacitação para que a solução entregue seja utilizável pela organização e sustentável pela equipa técnica.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="method-step bg-white">
+                                <span>01</span>
+                                <h4>Contexto primeiro</h4>
+                                <p>Entendemos processos, dados, infraestrutura e equipa antes de propor tecnologia.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="method-step bg-white">
+                                <span>02</span>
+                                <h4>Entrega documentada</h4>
+                                <p>Priorizamos soluções claras, configuradas, documentadas e transferidas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 text-center text-md-end">
-                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                <!-- <span class="text-light">Projetado por<a href="https://htmlcodex.com" class="text-secondary"> NMH Code</a> Distribuído por <a href="https://themewagon.com">NMHServices</a></span> -->
+        </div>
+    </section>
+
+    <section class="container-fluid py-5">
+        <div class="container py-4">
+            <div class="cta-panel">
+                <div>
+                    <h2>Quer discutir uma necessidade técnica específica?</h2>
+                    <p>Entre em contacto para alinhar o problema, a prioridade e o tipo de apoio adequado.</p>
+                </div>
+                <a href="contact.html" class="btn btn-secondary rounded-pill px-5 py-3 text-dark">Solicitar contacto</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html">
+                        <h1 class="h2 text-white fw-bold d-block">Piv<span class="text-secondary">otal</span></h1>
+                    </a>
+                    <p class="mt-4 text-light">Consultoria TIC para dados, IA, software, cloud, infraestrutura e saúde digital.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="h3 text-secondary">Links rápidos</h3>
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="index.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Início</a>
+                        <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Sobre Nós</a>
+                        <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contacto</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="h3 text-secondary">Contacte-nos</h3>
+                    <div class="text-white mt-4 d-flex flex-column contact-link">
+                        <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Maputo, Moçambique</a>
+                        <a href="tel:+258844129138" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +258 84 412 9138</a>
+                        <a href="mailto:agnaldo.samuel@pivotal.co.mz" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> agnaldo.samuel@pivotal.co.mz</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-12 text-center text-md-start">
+                    <span class="text-light"><a href="index.html" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Pivotal</a>, Todos os direitos reservados.</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
 
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top" aria-label="Voltar ao topo"><i class="fa fa-arrow-up text-white"></i></a>
 
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
-
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
 </html>
