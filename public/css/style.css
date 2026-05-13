@@ -664,3 +664,316 @@
 }
 
 /*** Footer End ***/
+
+
+/*** Pivotal Corporate Refresh Start ***/
+.site-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.min-vh-75 {
+    min-height: 60vh;
+}
+
+.pivotal-hero {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    background:
+        linear-gradient(90deg, rgba(12, 43, 66, .95) 0%, rgba(12, 43, 66, .84) 46%, rgba(12, 43, 66, .55) 100%),
+        url("../img/background.jpg") center center / cover no-repeat;
+}
+
+.pivotal-hero h1,
+.service-hero h1 {
+    max-width: 860px;
+    margin: 0;
+    font-size: 3.35rem;
+    line-height: 1.08;
+    letter-spacing: 0;
+}
+
+.pivotal-hero h1,
+.service-hero h1,
+.cta-panel h2 {
+    color: #ffffff;
+}
+
+.hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--bs-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-lead {
+    max-width: 760px;
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 255, .88);
+    font-size: 1.2rem;
+    line-height: 1.75;
+}
+
+.hero-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 2rem !important;
+}
+
+.hero-proof span,
+.capability-list span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: .65rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.hero-proof span {
+    border: 1px solid rgba(255, 255, 255, .24);
+    color: rgba(255, 255, 255, .92);
+    background: rgba(255, 255, 255, .08);
+}
+
+.section-heading {
+    max-width: 720px;
+}
+
+.section-heading h2,
+.cta-panel h2 {
+    margin-bottom: 0;
+}
+
+.credibility-panel,
+.specialty-card,
+.method-step,
+.service-detail-card {
+    height: 100%;
+    border: 1px solid rgba(9, 30, 48, .08);
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(9, 30, 48, .06);
+}
+
+.credibility-panel {
+    padding: 2rem;
+}
+
+.credibility-panel i {
+    margin-bottom: 1.2rem;
+    font-size: 2.25rem;
+}
+
+.credibility-panel h4,
+.method-step h4,
+.service-detail-card h3,
+.specialty-card h3 {
+    margin-bottom: .85rem;
+}
+
+.credibility-panel p,
+.method-step p,
+.service-detail-card p,
+.specialty-card p,
+.cta-panel p {
+    margin-bottom: 0;
+    color: #5f6f7c;
+    line-height: 1.7;
+}
+
+.service-band,
+.capability-section {
+    background: #f5f8fa;
+}
+
+.specialty-card {
+    padding: 2rem;
+}
+
+.specialty-card i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    color: var(--bs-primary);
+    background: rgba(38, 212, 140, .13);
+    font-size: 1.7rem;
+}
+
+.method-step {
+    padding: 1.75rem;
+}
+
+.method-step span {
+    display: block;
+    margin-bottom: .8rem;
+    color: var(--bs-primary);
+    font-family: "Saira", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.capability-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.capability-list span {
+    color: #123247;
+    background: #ffffff;
+    box-shadow: 0 10px 28px rgba(9, 30, 48, .06);
+}
+
+.cta-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2.5rem;
+    border-radius: 8px;
+    color: #ffffff;
+    background: #123247;
+}
+
+.cta-panel p {
+    max-width: 760px;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, .82);
+}
+
+.service-hero {
+    padding: 7rem 0;
+    color: #ffffff;
+    background:
+        linear-gradient(rgba(12, 43, 66, .86), rgba(12, 43, 66, .86)),
+        url("../img/carousel-1.jpg") center center / cover no-repeat;
+}
+
+.service-hero h1 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service-hero p {
+    max-width: 760px;
+    margin: 1.25rem auto 0;
+    color: rgba(255, 255, 255, .88);
+    font-size: 1.15rem;
+    line-height: 1.75;
+}
+
+.service-grid {
+    align-items: stretch;
+}
+
+.service-detail-card {
+    padding: 2rem;
+}
+
+.service-card-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-card-head i {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 8px;
+    color: var(--bs-primary);
+    background: rgba(38, 212, 140, .13);
+    font-size: 1.65rem;
+}
+
+.service-detail-card ul {
+    display: grid;
+    gap: .7rem;
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #4c5d69;
+    line-height: 1.6;
+}
+
+.service-detail-card li::marker {
+    color: var(--bs-primary);
+}
+
+.two-column-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 991.98px) {
+    .pivotal-hero h1,
+    .service-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .min-vh-75 {
+        min-height: auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .cta-panel {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .site-logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .pivotal-hero h1,
+    .service-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-lead,
+    .service-hero p {
+        font-size: 1rem;
+    }
+
+    .min-vh-75 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-proof {
+        display: none;
+    }
+
+    .credibility-panel,
+    .specialty-card,
+    .method-step,
+    .service-detail-card,
+    .cta-panel {
+        padding: 1.5rem;
+    }
+
+    .service-card-head {
+        flex-direction: column;
+    }
+
+    .two-column-list {
+        grid-template-columns: 1fr;
+    }
+}
+/*** Pivotal Corporate Refresh End ***/
