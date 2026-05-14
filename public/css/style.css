@@ -1426,4 +1426,486 @@
         flex-direction: column;
     }
 }
+
+@keyframes msFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes msSoftGlow {
+    0% {
+        opacity: .35;
+        transform: translateX(-28%) skewX(-16deg);
+    }
+    50% {
+        opacity: .85;
+    }
+    100% {
+        opacity: .2;
+        transform: translateX(120%) skewX(-16deg);
+    }
+}
+
+@keyframes msFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.ms-like-page {
+    overflow-x: hidden;
+}
+
+.ms-like-page a,
+.ms-like-page button,
+.ms-like-page input,
+.ms-like-page textarea,
+.ms-like-page select,
+.ms-cap-card,
+.ms-product-card,
+.ms-step,
+.ms-sector,
+.ms-action-card,
+.ms-service-card,
+.ms-contact-card,
+.ms-form-card,
+.ms-profile-card,
+.ms-tags span,
+.ms-panel-card,
+.ms-hero-panel,
+.ms-image-stack img {
+    transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease, background-color .24s ease, color .24s ease, opacity .24s ease;
+}
+
+.ms-topbar {
+    background: rgba(255, 255, 255, .92);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 4px 22px rgba(0, 0, 0, .04);
+}
+
+.ms-subnav {
+    background: rgba(248, 248, 248, .88);
+    backdrop-filter: blur(14px);
+}
+
+.ms-brand:hover {
+    transform: translateY(-1px);
+}
+
+.ms-main-nav a,
+.ms-subnav a,
+.ms-footer a {
+    position: relative;
+}
+
+.ms-main-nav a::after,
+.ms-footer a::after {
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -.28rem;
+    height: 2px;
+    content: "";
+    background: #0067b8;
+    transition: right .24s ease;
+}
+
+.ms-main-nav a:hover::after,
+.ms-main-nav a.active::after,
+.ms-footer a:hover::after {
+    right: 0;
+}
+
+.ms-top-cta,
+.ms-btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.ms-top-cta::before,
+.ms-btn::before,
+.ms-cap-card::before,
+.ms-product-card::before,
+.ms-action-card::before,
+.ms-service-card::before,
+.ms-contact-card::before,
+.ms-profile-card::before {
+    position: absolute;
+    inset: 0 auto 0 -42%;
+    width: 36%;
+    content: "";
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .55), transparent);
+    opacity: 0;
+}
+
+.ms-top-cta:hover,
+.ms-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 103, 184, .22);
+}
+
+.ms-top-cta:hover::before,
+.ms-btn:hover::before,
+.ms-cap-card:hover::before,
+.ms-product-card:hover::before,
+.ms-action-card:hover::before,
+.ms-service-card:hover::before,
+.ms-contact-card:hover::before,
+.ms-profile-card:hover::before {
+    animation: msSoftGlow .82s ease forwards;
+}
+
+.ms-btn-secondary:hover {
+    color: #004578;
+    background: rgba(0, 103, 184, .08);
+}
+
+.ms-hero,
+.ms-page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.ms-hero::before,
+.ms-page-hero::before {
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 520px;
+    height: 520px;
+    content: "";
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(0, 103, 184, .16), transparent 68%);
+}
+
+.ms-hero::after,
+.ms-page-hero::after {
+    position: absolute;
+    left: -12%;
+    bottom: -35%;
+    width: 520px;
+    height: 520px;
+    content: "";
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(0, 168, 120, .13), transparent 68%);
+}
+
+.ms-hero .ms-shell,
+.ms-page-hero .ms-shell {
+    position: relative;
+    z-index: 1;
+}
+
+.ms-page-hero {
+    padding: 5.25rem 0;
+    background: linear-gradient(120deg, #f7f9fb 0%, #ffffff 54%, #edf4fb 100%);
+}
+
+.ms-hero h1,
+.ms-page-hero h1,
+.ms-section-heading,
+.ms-cap-card,
+.ms-product-card,
+.ms-step,
+.ms-sector,
+.ms-action-card,
+.ms-service-card,
+.ms-contact-card,
+.ms-form-card,
+.ms-profile-card,
+.ms-center-panel {
+    animation: msFadeUp .55s ease both;
+}
+
+.ms-hero-panel:hover,
+.ms-image-stack:hover img:first-child {
+    transform: translateY(-5px);
+    box-shadow: 0 22px 56px rgba(0, 50, 90, .18);
+}
+
+.ms-hero-panel:hover img {
+    opacity: .88;
+    transform: scale(1.035);
+}
+
+.ms-hero-panel img {
+    transition: transform .45s ease, opacity .28s ease;
+}
+
+.ms-panel-card {
+    background: rgba(255, 255, 255, .88);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, .68);
+}
+
+.ms-panel-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, .16);
+}
+
+.ms-cap-card,
+.ms-product-card,
+.ms-step,
+.ms-sector,
+.ms-action-card,
+.ms-service-card,
+.ms-contact-card,
+.ms-form-card,
+.ms-profile-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.ms-cap-card:hover,
+.ms-product-card:hover,
+.ms-step:hover,
+.ms-sector:hover,
+.ms-action-card:hover,
+.ms-service-card:hover,
+.ms-contact-card:hover,
+.ms-form-card:hover,
+.ms-profile-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 103, 184, .36);
+    box-shadow: 0 22px 48px rgba(0, 50, 90, .13);
+}
+
+.ms-cap-card:hover i,
+.ms-service-card:hover .ms-service-head i,
+.ms-contact-card:hover i {
+    color: #00a878;
+}
+
+.ms-product-card a:hover,
+.ms-action-card a:hover,
+.ms-contact-card a:hover {
+    color: #004578;
+    text-decoration: underline;
+}
+
+.ms-tags span {
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .78);
+}
+
+.ms-tags span:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 103, 184, .4);
+    color: #0067b8;
+    box-shadow: 0 12px 24px rgba(0, 103, 184, .11);
+}
+
+.ms-faq .accordion-button {
+    transition: color .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+.ms-faq .accordion-button:hover,
+.ms-faq .accordion-button:focus {
+    color: #0067b8;
+    box-shadow: inset 4px 0 0 #0067b8;
+}
+
+.ms-center-panel {
+    max-width: 780px;
+    padding: 4rem 0;
+}
+
+.ms-center-panel h1 {
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+}
+
+.ms-service-card,
+.ms-contact-card,
+.ms-form-card,
+.ms-profile-card {
+    height: 100%;
+    padding: 1.65rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, .88);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.ms-service-card[id],
+[id].col-lg-6,
+[id].col-lg-12 {
+    scroll-margin-top: 125px;
+}
+
+.ms-service-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: .9rem;
+}
+
+.ms-service-head i,
+.ms-contact-card i {
+    color: #0067b8;
+    font-size: 1.65rem;
+}
+
+.ms-service-head h3,
+.ms-contact-card h3,
+.ms-profile-card h3 {
+    margin-bottom: .25rem;
+    font-size: 1.2rem;
+}
+
+.ms-service-list {
+    display: grid;
+    gap: .65rem;
+    margin: 1rem 0 0;
+    padding-left: 1.15rem;
+    color: #4f4f4f;
+}
+
+.ms-two-column-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ms-image-stack {
+    position: relative;
+    min-height: 420px;
+}
+
+.ms-image-stack img {
+    position: absolute;
+    width: 72%;
+    height: 300px;
+    object-fit: cover;
+    border: 8px solid rgba(255, 255, 255, .86);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, .15);
+}
+
+.ms-image-stack img:first-child {
+    top: 0;
+    left: 0;
+}
+
+.ms-image-stack img:last-child {
+    right: 0;
+    bottom: 0;
+    animation: msFloat 6s ease-in-out infinite;
+}
+
+.ms-profile-card {
+    text-align: center;
+}
+
+.ms-profile-card img {
+    width: 112px;
+    height: 112px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 22px rgba(0, 103, 184, .16);
+}
+
+.ms-contact-card i {
+    display: block;
+    margin-bottom: .9rem;
+}
+
+.ms-contact-card a {
+    color: #0067b8;
+    font-weight: 700;
+    word-break: break-word;
+}
+
+.ms-form-card label {
+    display: block;
+    margin-bottom: .45rem;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.ms-form-card input,
+.ms-form-card textarea,
+.ms-form-card select {
+    width: 100%;
+    min-height: 48px;
+    padding: .8rem .95rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, .92);
+    color: #1a1a1a;
+    font: inherit;
+}
+
+.ms-form-card textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.ms-form-card input:focus,
+.ms-form-card textarea:focus,
+.ms-form-card select:focus {
+    outline: 0;
+    border-color: #0067b8;
+    box-shadow: 0 0 0 4px rgba(0, 103, 184, .13);
+}
+
+@media (max-width: 991.98px) {
+    .ms-page-hero {
+        padding: 3.75rem 0;
+    }
+
+    .ms-page-hero h1 {
+        font-size: 2.55rem;
+    }
+
+    .ms-image-stack {
+        min-height: 340px;
+    }
+
+    .ms-image-stack img {
+        height: 240px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ms-page-hero h1,
+    .ms-center-panel h1 {
+        font-size: 2rem;
+    }
+
+    .ms-two-column-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ms-image-stack {
+        min-height: 0;
+    }
+
+    .ms-image-stack img {
+        position: relative;
+        width: 100%;
+        height: 220px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ms-like-page *,
+    .ms-like-page *::before,
+    .ms-like-page *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .001ms !important;
+    }
+}
 /*** Microsoft-like Landing End ***/
