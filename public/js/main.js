@@ -58,7 +58,7 @@
     });
 
 
-    // Testimonial carousel
+    // Feedback carousel
 
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -106,4 +106,3 @@
 
 
 })(jQuery);
-

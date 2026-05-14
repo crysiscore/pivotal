@@ -572,7 +572,7 @@
 /*** Team End ***/
 
 
-/*** Testimonial Start ***/
+/*** Feedback Start ***/
 
 .testimonial-item {
     background: #e3f0eb;
@@ -616,7 +616,7 @@
     box-shadow: 0 0 30px #DDDDDD;
 }
 
-/*** Testimonial End ***/
+/*** Feedback End ***/
 
 
 /*** Contact Start ***/
@@ -961,3 +961,469 @@
     }
 }
 /*** Pivotal Corporate Refresh End ***/
+
+
+/*** Microsoft-like Landing Start ***/
+.ms-like-page {
+    color: #1a1a1a;
+    background: #ffffff;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.ms-like-page h1,
+.ms-like-page h2,
+.ms-like-page h3,
+.ms-like-page h4 {
+    color: #111111;
+    font-family: "Inter", Arial, sans-serif;
+    letter-spacing: 0;
+}
+
+.ms-shell {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.ms-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1040;
+    border-bottom: 1px solid #e5e5e5;
+    background: #ffffff;
+}
+
+.ms-topbar .ms-shell {
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    gap: 2rem;
+}
+
+.ms-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+    color: #1a1a1a;
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.ms-brand:hover,
+.ms-main-nav a:hover,
+.ms-subnav a:hover,
+.ms-footer a:hover {
+    color: #0067b8;
+}
+
+.ms-brand img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.ms-brand span span {
+    color: #00a878;
+}
+
+.ms-menu-button {
+    display: none;
+    margin-left: auto;
+    border: 1px solid #d2d2d2;
+    background: #ffffff;
+    color: #1a1a1a;
+    font-size: 1.6rem;
+}
+
+.ms-main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.35rem;
+    margin-left: auto;
+}
+
+.ms-main-nav a,
+.ms-subnav a,
+.ms-footer a {
+    color: #333333;
+    font-weight: 600;
+}
+
+.ms-main-nav a.active {
+    color: #0067b8;
+}
+
+.ms-top-cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: .55rem 1rem;
+    color: #ffffff;
+    background: #0067b8;
+    font-weight: 700;
+}
+
+.ms-top-cta:hover,
+.ms-btn-primary:hover {
+    color: #ffffff;
+    background: #005da6;
+}
+
+.ms-subnav {
+    position: sticky;
+    top: 64px;
+    z-index: 1030;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f8f8f8;
+}
+
+.ms-subnav .ms-shell {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.ms-subnav a {
+    padding: .85rem 0;
+    border-bottom: 3px solid transparent;
+}
+
+.ms-subnav a:hover {
+    border-bottom-color: #0067b8;
+}
+
+.ms-hero {
+    padding: 5.5rem 0;
+    background: linear-gradient(90deg, #f7f9fb 0%, #ffffff 58%, #edf4fb 100%);
+}
+
+.ms-eyebrow {
+    margin-bottom: .85rem;
+    color: #0067b8;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ms-hero h1 {
+    max-width: 760px;
+    margin-bottom: 1.25rem;
+    font-size: 3.75rem;
+    line-height: 1.04;
+    font-weight: 700;
+}
+
+.ms-hero-lead,
+.ms-copy,
+.ms-section-heading p,
+.ms-product-card p,
+.ms-cap-card p,
+.ms-step p,
+.ms-action-card p,
+.ms-footer p {
+    color: #4f4f4f;
+    line-height: 1.65;
+}
+
+.ms-hero-lead {
+    max-width: 720px;
+    font-size: 1.18rem;
+}
+
+.ms-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .85rem;
+    margin-top: 2rem;
+}
+
+.ms-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: .75rem 1.2rem;
+    font-weight: 700;
+}
+
+.ms-btn-primary {
+    color: #ffffff;
+    background: #0067b8;
+}
+
+.ms-btn-secondary {
+    color: #0067b8;
+    border: 1px solid #0067b8;
+    background: #ffffff;
+}
+
+.ms-hero-panel {
+    position: relative;
+    min-height: 360px;
+    overflow: hidden;
+    border-radius: 2px;
+    background: #e6eef7;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, .12);
+}
+
+.ms-hero-panel img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    opacity: .78;
+}
+
+.ms-panel-card {
+    position: absolute;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    max-width: 320px;
+    padding: 1.15rem;
+    background: #ffffff;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .16);
+}
+
+.ms-panel-card span {
+    display: block;
+    margin-bottom: .35rem;
+    color: #0067b8;
+    font-weight: 700;
+}
+
+.ms-panel-card strong {
+    color: #111111;
+}
+
+.ms-section {
+    padding: 5rem 0;
+    scroll-margin-top: 120px;
+}
+
+.ms-section-muted {
+    background: #f5f5f5;
+}
+
+.ms-section-heading {
+    max-width: 760px;
+    margin-bottom: 2.5rem;
+}
+
+.ms-section-heading h2 {
+    margin-bottom: .85rem;
+    font-size: 2.35rem;
+    line-height: 1.14;
+}
+
+.ms-cap-card,
+.ms-product-card,
+.ms-step,
+.ms-sector,
+.ms-action-card {
+    height: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.ms-cap-card,
+.ms-product-card,
+.ms-action-card {
+    padding: 1.6rem;
+}
+
+.ms-cap-card i {
+    margin-bottom: 1.25rem;
+    color: #0067b8;
+    font-size: 2rem;
+}
+
+.ms-cap-card h3,
+.ms-product-card h3,
+.ms-action-card h3 {
+    margin-bottom: .8rem;
+    font-size: 1.25rem;
+}
+
+.ms-product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.ms-product-card a,
+.ms-action-card a {
+    margin-top: auto;
+    color: #0067b8;
+    font-weight: 700;
+}
+
+.ms-step {
+    padding: 1.35rem;
+}
+
+.ms-step span {
+    color: #0067b8;
+    font-weight: 700;
+}
+
+.ms-step h3 {
+    margin: .4rem 0 .6rem;
+    font-size: 1.2rem;
+}
+
+.ms-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+}
+
+.ms-tags span {
+    padding: .7rem 1rem;
+    border: 1px solid #d2d2d2;
+    background: #ffffff;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.ms-sector {
+    padding: 1.6rem;
+    color: #1a1a1a;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.ms-faq .accordion-item {
+    border: 1px solid #d8d8d8;
+    border-radius: 0;
+    margin-bottom: .75rem;
+}
+
+.ms-faq .accordion-button {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.ms-faq .accordion-button:not(.collapsed) {
+    color: #0067b8;
+    background: #ffffff;
+    box-shadow: none;
+}
+
+.ms-next {
+    background: #ffffff;
+}
+
+.ms-footer {
+    padding: 2.5rem 0;
+    border-top: 1px solid #e5e5e5;
+    background: #f5f5f5;
+}
+
+.ms-footer .ms-shell {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.ms-footer strong {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.ms-footer p {
+    margin-bottom: 0;
+}
+
+.ms-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-content: flex-start;
+}
+
+@media (max-width: 991.98px) {
+    .ms-topbar .ms-shell {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: .75rem 0;
+    }
+
+    .ms-menu-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 40px;
+    }
+
+    .ms-main-nav {
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .6rem;
+        margin-left: 0;
+        padding-bottom: .75rem;
+    }
+
+    .ms-top-cta {
+        display: none;
+    }
+
+    .ms-subnav {
+        top: 74px;
+    }
+
+    .ms-hero {
+        padding: 3.5rem 0;
+    }
+
+    .ms-hero h1 {
+        font-size: 2.65rem;
+    }
+
+    .ms-hero-panel {
+        min-height: 280px;
+    }
+
+    .ms-hero-panel img {
+        height: 280px;
+    }
+
+    .ms-section {
+        padding: 3.5rem 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ms-shell {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .ms-brand span {
+        font-size: 1.2rem;
+    }
+
+    .ms-subnav {
+        top: 70px;
+    }
+
+    .ms-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .ms-actions {
+        flex-direction: column;
+    }
+
+    .ms-btn {
+        width: 100%;
+    }
+
+    .ms-section-heading h2 {
+        font-size: 1.75rem;
+    }
+
+    .ms-footer .ms-shell {
+        flex-direction: column;
+    }
+}
+/*** Microsoft-like Landing End ***/
