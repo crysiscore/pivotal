@@ -12,8 +12,10 @@
     spinner();
     
     
-    // Initiate the wowjs
-    new WOW().init();
+    // Initiate the wowjs when the library is available
+    if (typeof WOW !== 'undefined') {
+        new WOW().init();
+    }
     
     
    // Back to top button
@@ -28,6 +30,69 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+
+    // Active state for Microsoft-like subnavigation
+    var subnavLinks = document.querySelectorAll('.ms-subnav a[href^="#"]');
+    if (subnavLinks.length > 0) {
+        var subnavTargets = Array.prototype.map.call(subnavLinks, function (link) {
+            return {
+                link: link,
+                section: document.querySelector(link.getAttribute('href'))
+            };
+        }).filter(function (item) {
+            return item.section;
+        });
+
+        var setActiveSubnav = function (activeLink) {
+            subnavLinks.forEach(function (link) {
+                link.classList.toggle('is-active', link === activeLink);
+            });
+        };
+
+        var updateActiveSubnav = function () {
+            var current = subnavTargets[0];
+            subnavTargets.forEach(function (item) {
+                if (item.section.getBoundingClientRect().top < 180) {
+                    current = item;
+                }
+            });
+            if (current) {
+                setActiveSubnav(current.link);
+            }
+        };
+
+        subnavLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                setActiveSubnav(link);
+            });
+        });
+
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        var current = subnavTargets.find(function (item) {
+                            return item.section === entry.target;
+                        });
+                        if (current) {
+                            setActiveSubnav(current.link);
+                        }
+                    }
+                });
+            }, {
+                rootMargin: '-35% 0px -55% 0px',
+                threshold: 0
+            });
+
+            subnavTargets.forEach(function (item) {
+                observer.observe(item.section);
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveSubnav);
+        window.addEventListener('load', updateActiveSubnav);
+        setTimeout(updateActiveSubnav, 150);
+    }
 
 
     // Team carousel
@@ -58,7 +123,7 @@
     });
 
 
-    // Testimonial carousel
+    // Feedback carousel
 
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -106,4 +171,3 @@
 
 
 })(jQuery);
-

@@ -1,331 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Sobre Nós | Pivotal Consultoria TIC</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Pivotal, consultoria TIC em Moçambique, ciência de dados, inteligência artificial, desenvolvimento de software, cloud, infraestrutura de TI, hardware, saúde digital, business intelligence" name="keywords">
-        <meta content="Conheça a Pivotal, uma consultoria TIC em Moçambique focada em dados, IA, desenvolvimento de software, cloud, infraestrutura de TI e saúde digital." name="description">
-        <link rel="icon" href="img/logo-Photoroom.png" sizes="32x32" type="image/png"> <!-- Ajuste o tamanho e o tipo conforme necessário -->
+<head>
+    <meta charset="utf-8">
+    <title>Sobre Nós | Pivotal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Pivotal, consultoria TIC em Moçambique, dados, inteligência artificial, software, cloud, infraestrutura, saúde digital" name="keywords">
+    <meta content="Conheça a Pivotal, consultoria TIC focada em dados, IA, software, cloud, infraestrutura de TI e saúde digital." name="description">
+    <link rel="icon" href="img/logo-Photoroom.png" type="image/png">
 
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-84S9RRLBRZ"></script>
-          <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-  
-          gtag('config', 'G-84S9RRLBRZ');
-          </script>
-          
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84S9RRLBRZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-84S9RRLBRZ');
+    </script>
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<body class="ms-like-page">
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
+    <header class="ms-topbar">
+        <div class="ms-shell">
+            <a class="ms-brand" href="index.html" aria-label="Pivotal">
+                <img src="img/logo-Photoroom.png" alt="Pivotal Logo">
+                <span>Piv<span>otal</span></span>
+            </a>
+            <button class="ms-menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#msMainNav" aria-label="Abrir navegação">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav id="msMainNav" class="collapse ms-main-nav">
+                <a href="index.html">Início</a>
+                <a href="service.html">Serviços</a>
+                <a href="index.html#about">Sobre</a>
+                <a href="index.html#resources">Recursos</a>
+                <a href="contact.html">Contactos</a>
+            </nav>
         </div>
-        <!-- Spinner End -->
+    </header>
 
-        <!-- Navbar Start -->
-        <div class="container-fluid bg-primary">
-            <div class="container">
-                <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="text-white fw-bold d-flex align-items-center mb-0"><img src="img/logo-Photoroom.png" alt="Pivotal Logo" class="me-2 site-logo">Piv<span class="text-secondary">otal</span> </h1>
-                    </a>
-                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto p-0">
-                            <a href="index.html" class="nav-item nav-link">Início</a>
-                            <a href="about.html" class="nav-item nav-link active text-secondary">Sobre</a>
-                            <a href="service.html" class="nav-item nav-link">Serviços</a>
-                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+    <main>
+        <section class="ms-page-hero">
+            <div class="ms-shell">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7">
+                        <p class="ms-eyebrow">Sobre a Pivotal</p>
+                        <h1>Consultoria TIC com foco em execução e transferência de conhecimento</h1>
+                        <p class="ms-hero-lead">A Pivotal apoia organizações na utilização prática de dados, IA, software, cloud, infraestrutura e saúde digital para melhorar decisões, processos e continuidade operacional.</p>
+                        <div class="ms-actions">
+                            <a class="ms-btn ms-btn-primary" href="service.html">Conhecer serviços</a>
+                            <a class="ms-btn ms-btn-secondary" href="contact.html">Falar connosco</a>
                         </div>
                     </div>
-                  <!--   <div class="d-none d-xl-flex flex-shirink-0">
-                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                            <a href="tel:+258849004524" class="position-relative animated tada infinite">
-                                <i class="fa fa-phone-alt text-white fa-2x"></i>
-                                <div class="position-absolute" style="top: -7px; left: 20px;">
-                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                </div>
-                            </a>
-                        </div>-->
-                    </div>
-                        <!--  <div class="d-flex flex-column pe-4">
-                            <span class="text-white-50">Tem Alguma dúvida?</span>
-                            <span class="text-secondary">Contacte-nos: + 258 849004524</span>
-                        </div>-->
-                    </div>
-                      <!--  <div class="d-flex align-items-center justify-content-center ms-4 ">
-                            <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
-                        </div>-->
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar End -->
-
-        
-        <!-- Page Header Start -->
-        <div class="container-fluid page-header py-5">
-            <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Sobre Nós</h1>
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb justify-content-center mb-0">
-                       <!-- <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item" aria-current="page">About</li>-->
-                    </ol>
-                </nav>
-            </div>
-        </div>
-        <!-- Page Header End -->
-
-
-        <!-- Fact Start -->
-        <!-- <div class="container-fluid bg-secondary py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">99</h1>
-                            <h5 class="text-white mt-1">Sucesso em conseguir um cliente satisfeito</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">25</h1>
-                            <h5 class="text-white mt-1">Milhares de negócios bem-sucedidos</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">120</h1>
-                            <h5 class="text-white mt-1">Total de clientes que amam a Pivotal</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">5</h1>
-                            <h5 class="text-white mt-1">Avaliações com estrelas dadas por clientes satisfeitos</h5>
+                    <div class="col-lg-5">
+                        <div class="ms-image-stack">
+                            <img src="img/raca3.jpg" alt="Trabalho técnico da Pivotal">
+                            <img src="img/about-2.jpg" alt="Ambiente de consultoria tecnológica">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>-->
-        <!-- Fact End -->
+        </section>
 
-
-        <!-- About Start -->
-        <div class="container-fluid py-5 my-5">
-            <div class="container py-5">
+        <section class="ms-section">
+            <div class="ms-shell">
                 <div class="row g-5">
-                    <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                        <div class="h-100 position-relative">
-                            <img src="img/raca3.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
-                            <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                                <img src="img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
-                            </div>
-                        </div>
+                    <div class="col-lg-5">
+                        <p class="ms-eyebrow">Perfil institucional</p>
+                        <h2>Uma consultoria técnica, sóbria e orientada à operação</h2>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h5 class="text-primary">Sobre Nós</h5>
-                        <h1 class="mb-4">Consultoria TIC para dados, IA, software e infraestrutura</h1>
-                        <p>A Pivotal é uma empresa de consultoria em TICs que apoia organizações na utilização prática da tecnologia para melhorar decisões, processos e operações.</p>
-                        <p>Actuamos em ciência de dados, Business Intelligence, adoção de inteligência artificial, desenvolvimento de software, computação em nuvem, infraestrutura de TI, hardware e soluções de saúde digital.</p>
-                        <p class="mb-4">O nosso trabalho combina análise do contexto, desenho técnico, implementação e transferência de conhecimento. A prioridade é entregar soluções compreensíveis, sustentáveis e ajustadas à realidade operacional de cada cliente.</p>
-                        <a href="service.html" class="btn btn-secondary rounded-pill px-5 py-3 text-dark">Conhecer Serviços</a>
+                    <div class="col-lg-7">
+                        <p class="ms-copy">Atuamos em ciência de dados, Business Intelligence, adoção responsável de inteligência artificial, desenvolvimento de software, computação em nuvem, infraestrutura de TI, hardware e soluções de saúde digital.</p>
+                        <p class="ms-copy">O trabalho combina análise do contexto, desenho técnico, implementação e capacitação. A prioridade é entregar soluções compreensíveis, sustentáveis e ajustadas à realidade operacional de cada cliente.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- About End -->
+        </section>
 
-        <div class="container-fluid service-band py-5 mb-5">
-            <div class="container py-4">
-                <div class="text-center mx-auto mb-5 section-heading">
-                    <h5 class="text-primary">O que orienta o nosso trabalho</h5>
-                    <h1>Uma abordagem técnica, directa e orientada à operação</h1>
+        <section class="ms-section ms-section-muted">
+            <div class="ms-shell">
+                <div class="ms-section-heading">
+                    <p class="ms-eyebrow">Como trabalhamos</p>
+                    <h2>Princípios que orientam as entregas</h2>
+                    <p>O foco está em clareza técnica, utilidade prática e capacidade de continuidade após a entrega.</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-md-6 col-xl-3">
-                        <div class="method-step">
-                            <span>01</span>
-                            <h4>Entendimento do contexto</h4>
-                            <p>Antes de propor tecnologia, analisamos processos, dados, equipa, infraestrutura e prioridades do cliente.</p>
-                        </div>
+                    <div class="col-md-6 col-xl-3"><div class="ms-step"><span>01</span><h3>Contexto primeiro</h3><p>Entendemos processos, dados, equipa, infraestrutura e prioridades antes de propor tecnologia.</p></div></div>
+                    <div class="col-md-6 col-xl-3"><div class="ms-step"><span>02</span><h3>Soluções proporcionais</h3><p>Escolhemos ferramentas e arquiteturas adequadas ao problema, evitando complexidade desnecessária.</p></div></div>
+                    <div class="col-md-6 col-xl-3"><div class="ms-step"><span>03</span><h3>Entrega responsável</h3><p>Implementamos com documentação, critérios claros e validação funcional.</p></div></div>
+                    <div class="col-md-6 col-xl-3"><div class="ms-step"><span>04</span><h3>Adoção</h3><p>Apoiamos equipas para que consigam operar e evoluir as soluções implementadas.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ms-section">
+            <div class="ms-shell">
+                <div class="ms-section-heading">
+                    <p class="ms-eyebrow">Equipa</p>
+                    <h2>Perfis técnicos que suportam as entregas</h2>
+                    <p>A equipa combina competências em engenharia de software, análise de negócio, dados, visualização de informação e implementação de soluções.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-xl"><article class="ms-profile-card"><img src="img/agnaldo.png" alt="Agnaldo Samuel"><h3>Agnaldo Samuel</h3><p>Engenharia de Software e Análise de Negócio</p></article></div>
+                    <div class="col-sm-6 col-xl"><article class="ms-profile-card"><img src="img/felimone.png" alt="Felimone Amone"><h3>Felimone Amone</h3><p>Liderança Técnica e Implementação de Soluções</p></article></div>
+                    <div class="col-sm-6 col-xl"><article class="ms-profile-card"><img src="img/neusia.png" alt="Neusia Hilario"><h3>Neusia Hilario</h3><p>Análise de Dados e Visualização de Informação</p></article></div>
+                    <div class="col-sm-6 col-xl"><article class="ms-profile-card"><img src="img/denilson.png" alt="Denilson Mucavele"><h3>Denilson Mucavele</h3><p>Desenvolvimento de Software Back-end</p></article></div>
+                    <div class="col-sm-6 col-xl"><article class="ms-profile-card"><div class="ms-profile-avatar" aria-hidden="true"><i class="fa fa-network-wired"></i></div><h3>Carmona Simbine</h3><p>Consultor de Infraestrutura de Redes</p></article></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ms-section ms-next">
+            <div class="ms-shell">
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <h2>Precisa alinhar tecnologia com uma necessidade concreta?</h2>
+                        <p class="ms-copy mb-0">Podemos apoiar no diagnóstico, desenho técnico, implementação e transferência de conhecimento.</p>
                     </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="method-step">
-                            <span>02</span>
-                            <h4>Soluções proporcionais</h4>
-                            <p>Escolhemos ferramentas e arquiteturas adequadas ao problema, evitando complexidade desnecessária.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="method-step">
-                            <span>03</span>
-                            <h4>Implementação responsável</h4>
-                            <p>Construímos, configuramos e validamos soluções com documentação e critérios claros de aceitação.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="method-step">
-                            <span>04</span>
-                            <h4>Capacitação</h4>
-                            <p>Apoiamos a adoção pelas equipas para que a organização consiga operar e evoluir a solução.</p>
-                        </div>
+                    <div class="col-lg-4 d-flex align-items-center justify-content-lg-end">
+                        <a class="ms-btn ms-btn-primary" href="contact.html">Solicitar contacto</a>
                     </div>
                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ms-footer">
+        <div class="ms-shell ms-footer-grid">
+            <div class="ms-footer-column ms-footer-summary">
+                <strong>Pivotal</strong>
+                <p>Consultoria TIC para dados, IA, software, cloud, infraestrutura e saúde digital.</p>
+            </div>
+            <div class="ms-footer-column">
+                <strong>Serviços</strong>
+                <a href="service.html#dados">Dados e BI</a>
+                <a href="service.html#ia">Adoção de IA</a>
+                <a href="service.html#software">Desenvolvimento de software</a>
+                <a href="service.html#cloud">Cloud e automação</a>
+            </div>
+            <div class="ms-footer-column">
+                <strong>Recursos</strong>
+                <a href="index.html#resources">Competências técnicas</a>
+                <a href="index.html#about">Abordagem</a>
+                <a href="index.html#faq">Perguntas frequentes</a>
+            </div>
+            <div class="ms-footer-column">
+                <strong>Empresa</strong>
+                <a href="index.html#about">Sobre a Pivotal</a>
+                <a href="index.html#customers">Organizações atendidas</a>
+                <a href="contact.html">Contactos</a>
+            </div>
+            <div class="ms-footer-column ms-footer-contact">
+                <strong>Contactos</strong>
+                <a href="mailto:agnaldo.samuel@pivotal.co.mz">agnaldo.samuel@pivotal.co.mz</a>
+                <a href="tel:+258844129138">+258 84 412 9138</a>
+                <span>Maputo, Moçambique</span>
             </div>
         </div>
-
-
-        <!-- Team Start -->
-        <div class="container-fluid pb-5 mb-5 team">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Nossa Equipe</h5>
-                    <h1>Perfis técnicos que suportam as nossas entregas</h1>
-                </div>
-                <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/agnaldo.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Agnaldo Samuel</h4>
-                                    <p class="m-0">Engenharia de Software e Análise de Negócio</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/felimone.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Felimone Amone</h4>
-                                    <p class="m-0">Liderança Técnica e Implementação de Soluções</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/neusia.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Neusia Hilario</h4>
-                                    <p class="m-0">Análise de Dados e Visualização de Informação</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/denilson.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Denilson Mucavele</h4>
-                                    <p class="m-0">Desenvolvimento de Software Back-end</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="ms-shell ms-footer-bottom">
+            <span>Português (Moçambique)</span>
+            <div>
+                <a href="contact.html">Contactar Pivotal</a>
+                <a href="index.html">Mapa do site</a>
+                <span>© Pivotal</span>
             </div>
         </div>
-        <!-- Team End -->
+    </footer>
 
-<!-- Footer Start -->
-<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
-    <div class="container pt-5 pb-4">
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <a href="index.html">
-                    <h1 class="h2 text-white fw-bold d-block">Piv<span class="text-secondary">otal</span></h1>
-                </a>
-                <p class="mt-4 text-light">Consultoria TIC para dados, IA, software, cloud, infraestrutura e saúde digital.</p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h3 class="h3 text-secondary">Links rápidos</h3>
-                <div class="mt-4 d-flex flex-column short-link">
-                    <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Sobre Nós</a>
-                    <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contacte-nos</a>
-                    <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nossos Serviços</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h3 class="h3 text-secondary">Contacte-nos</h3>
-                <div class="text-white mt-4 d-flex flex-column contact-link">
-                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Maputo, Moçambique</a>
-                    <a href="tel:+258844129138" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +258 84 412 9138</a>
-                    <a href="mailto:agnaldo.samuel@pivotal.co.mz" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> agnaldo.samuel@pivotal.co.mz</a>
-                </div>
-            </div>
-        </div>
-        <hr class="text-light mt-5 mb-4">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start">
-                <span class="text-light"><a href="index.html" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Pivotal</a>, Todos os direitos reservados.</span>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                <!-- <span class="text-light">Projetado por<a href="https://htmlcodex.com" class="text-secondary"> NMH Code</a> Distribuído por <a href="https://themewagon.com">NMHServices</a></span> -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Footer End -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top" aria-label="Voltar ao topo"><i class="fa fa-arrow-up text-white"></i></a>
 
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
-
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js?v=20260515"></script>
+</body>
 
 </html>
